@@ -1,6 +1,8 @@
 document.getElementById("signUp").addEventListener("submit", function(e){
     e.preventDefault();
 
+// declaring variable
+
     const UserName = document.getElementById("UserName").value.trim();
     const FirstName =document.getElementById("FirstName").value.trim(); 
     const LastName =document.getElementById("LastName").value.trim();
@@ -9,7 +11,7 @@ document.getElementById("signUp").addEventListener("submit", function(e){
     const confirmPassword = document.getElementById("confirmPassword").value;
     const errorEl = document.getElementById("signUpError");
 
-
+// adding our functions (error)
 
     if (!UserName || !FirstName || !LastName || !Email || !Password || !confirmPassword) {
         errorEl.textContent = "All fields are required.";
